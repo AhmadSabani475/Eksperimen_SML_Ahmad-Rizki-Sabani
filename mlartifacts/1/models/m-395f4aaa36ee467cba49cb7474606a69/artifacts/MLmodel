@@ -1,0 +1,43 @@
+artifact_path: mlflow-artifacts:/1/models/m-395f4aaa36ee467cba49cb7474606a69/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.13.0
+model_id: m-395f4aaa36ee467cba49cb7474606a69
+model_size_bytes: 3286086
+model_uuid: m-395f4aaa36ee467cba49cb7474606a69
+prompts: null
+run_id: 83605b5837424a9b9b439b1e676b25b4
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Age", "required": true}, {"type": "double",
+    "name": "Sleep Duration", "required": true}, {"type": "double", "name": "Quality
+    of Sleep", "required": true}, {"type": "double", "name": "Physical Activity Level",
+    "required": true}, {"type": "double", "name": "Stress Level", "required": true},
+    {"type": "double", "name": "BMI Category", "required": true}, {"type": "double",
+    "name": "Heart Rate", "required": true}, {"type": "double", "name": "Daily Steps",
+    "required": true}, {"type": "double", "name": "Systolic_BP", "required": true},
+    {"type": "double", "name": "Diastolic_BP", "required": true}, {"type": "double",
+    "name": "Gender", "required": true}, {"type": "double", "name": "Occupation",
+    "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-07 13:23:21.086483'
